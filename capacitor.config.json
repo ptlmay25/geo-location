@@ -1,0 +1,8 @@
+{
+  "appId": "com.geo.loc",
+  "appName": "geoloc",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
