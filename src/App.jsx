@@ -13,6 +13,7 @@ const App = () => {
       .then((data) => {
         console.log(data);
         setData(data.address);
+        console.log(data.address.city);
       })
       .catch((error) => console.error("Error fetching location data:", error));
   }
@@ -44,7 +45,9 @@ const App = () => {
       <div>
         <p>Latitude:{lat} </p>
         <p>Longitude: {log} </p>
-        <p>Longitude: {data.leisure} </p>
+        <p>City: {data.city} </p>
+        <p>State: {data.state} </p>
+        <p>Counry: {data.country} </p>
       </div>
     </div>
   );
